@@ -4,7 +4,9 @@
 		<meta charset="UTF-8" />
 		<script src="./foo.js"></script>
 		<script>
-			foo(); // this fails due to syntax error in foo.js
+			window.addEventListener('load', function () {
+				foo(); // this fails due to syntax error in foo.js
+			});
 		</script>
 		<title>Document</title>
 	</head>
